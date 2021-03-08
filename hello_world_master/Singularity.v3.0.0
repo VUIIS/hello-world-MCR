@@ -20,12 +20,12 @@ From: Ubuntu 20.04.2 LTS
 %post
   # Download files from the internet, install new software and libraries, write configuration files, create new directories.
   
-  # Download the Matlab Compiled Runtime installer, install, clean up (might need update)
+  # Download the Matlab Compiled Runtime installer, install, clean up (R2019b)
   mkdir /MCR
-  wget -nv -P /MCR http://ssd.mathworks.com/supportfiles/downloads/R2019b/deployment_files/R2019b/installers/glnxa64/MCR_R2019b_glnxa64_installer.zip
-  unzip -q /MCR/MCR_R2019b_glnxa64_installer.zip -d /MCR/MCR_R2019b_glnxa64_installer
-  /MCR/MCR_R2019b_glnxa64_installer/install -mode silent -agreeToLicense yes
-  rm -r /MCR/MCR_R2019b_glnxa64_installer /MCR/MCR_R2019b_glnxa64_installer.zip
+  wget -nv -P /MCR https://ssd.mathworks.com/supportfiles/downloads/R2019b/Release/6/deployment_files/installer/complete/glnxa64/MATLAB_Runtime_R2019b_Update_6_glnxa64.zip
+  unzip /MCR/MATLAB_Runtime_R2019b_Update_6_glnxa64.zip -d /MCR/MATLAB_Runtime_R2019b_Update_6_glnxa64
+  /MCR/MATLAB_Runtime_R2019b_Update_6_glnxa64/install -mode silent -agreeToLicense yes
+  rm -r /MCR/MATLAB_Runtime_R2019b_Update_6_glnxa64 /MCR/MATLAB_Runtime_R2019b_Update_6_glnxa64.zip
   rmdir /MCR
 
 
