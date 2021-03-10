@@ -19,7 +19,7 @@ From: ubuntu:20.04
 %post
   # Download files from the internet, install new software and libraries, write configuration files, create new directories.
   apt-get update
-  apt-get install -y wget unzip openjdk-8-jre
+  apt-get install -y wget unzip openjdk-8-jre xvfb
   
   # Download the Matlab Compiled Runtime installer, install, clean up (might need update)
   mkdir /MCR
@@ -29,13 +29,13 @@ From: ubuntu:20.04
   rm -r /MCR/MATLAB_Runtime_R2019b_Update_6_glnxa64 /MCR/MATLAB_Runtime_R2019b_Update_6_glnxa64.zip
   rmdir /MCR
 
-# Create input/output directories for binding
-  mkdir $(pwd -P)/INPUTS && mkdir $(pwd -P)/OUTPUTS
+ # Create input/output directories for binding
+  mkdir /INPUTS && mkdir /OUTPUTS
 
 
 %runscript
   # contents written to a file within the container that is executed when the image is run.
-  sh ${SINGULARITY_ROOTFS}/opt/hello_world_master/bin/run_hello_world.sh \
+  sh ${SINGULARITY_ROOTFS}/opt/hello_world/bin/run_hello_world.sh \
   ${SINGULARITY_ROOTFS}/usr/local/MATLAB/MATLAB_Runtime/v97 "$@"
 
 
