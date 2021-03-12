@@ -22,7 +22,7 @@ This document will take you through the steps of creating a singularity containe
 
 # The process
 
-## Develop and test matlab code locally
+## Develop and test Matlab code locally
 All Matlab code should be contained within the 'src' directory, including a Matlab function to test if the code is operational from the Matlab command line.
 A critical point here is that there is a single entrypoint for the processing. In this case it's the function `hello_world.m` which takes file paths and parameters as input and calls the various parts of the pipeline. All outputs should be stored in the `out_dir` that is specified when this function is called. That may also be used as a working directory. In a container, the accessible directories and files will not match the development systems, so some attention needs to be paid to where things are.
 
@@ -35,7 +35,7 @@ The compiled matlab executable will often exceed github's 100 MB file size limit
 
     git lfs track bin/example_main
 
-## Create singularity container recipe
+## Create Singularity container recipe
 The recipe for singularity container requires a specific structure and organization. The example provides explanations of each section within the recipe. For more detailed instructions, see the [user guide](https://sylabs.io/guides/3.7/user-guide.pdf).
 The singularity recipe will designate input and output directories, update and install all required packages, download Matlab Compiled Runtime, and run the compiled Matlab script. Be sure the version of Matlab Compiled Runtime is the same as the Matlab version used to write the code.
 
