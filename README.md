@@ -53,19 +53,19 @@ Finally, we have a script to test the container, `test_sing_container.sh`. Comma
 
 # List of commonly required programs and packages
 
-Programs:
-	VirtualBox			  Create a virtual environment for running Linux
-	Ubuntu 			      Linux OS for building singularity
-	Matlab Runtime		Allows user to run compiled Matlab code
-	Singularity		    Used to generate singularity containers
+	Programs:
+		VirtualBox		  Create a virtual environment for running Linux
+		Ubuntu 			  Linux OS for building singularity
+		Matlab Runtime 		  Allows user to run compiled Matlab code
+		Singularity		  Used to generate singularity containers
 	
-Packages:
-	wget				      Download software during build
-	unzip,zip			    Unzip and zip files
-	Imagemagick		    Used to write figures to pdf format
-	ghostscript		    Required for ImageMagick
-	xvfb				      Required for Matlab Runtime. Displays figures on virtual display.
-	openjdk-8-jre		  Required for Matlab Runtime to work.
+	Packages:
+		wget			  Download software during build
+		unzip,zip		  Unzip and zip files
+		Imagemagick		  Used to write figures to pdf format
+		ghostscript		  Required for ImageMagick
+		xvfb			  Required for Matlab Runtime. Displays figures on virtual display.
+		openjdk-8-jre		  Required for Matlab Runtime to work.
 
 
 # Helpful links
