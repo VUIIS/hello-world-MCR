@@ -70,12 +70,19 @@ Packages:
 
 # Helpful links
 [VUMC Matlab License Access](https://www.vumc.org/it/software-store-blog-vumc-it-blog/matlab-anytime-anywhere)
+
 [Matlab compiler documentation](https://www.mathworks.com/help/compiler/index.html?s_tid=CRUX_lftnav)
+
 [Singularity homepage](https://singularity-hub.org/)
+
 [Singularity documentation](https://sylabs.io/guides/3.7/user-guide.pdf)
+
 [Singularity examples](https://github.com/singularityhub/singularity-compose-examples)
+
 [CCI Homepage](https://my.vanderbilt.edu/vuiiscci/)
+
 [Link to identify appropriate headers for singularity recipe](hub.docker.com/_/ubuntu)
+
 [Singularity installation guide](sylabs.io/guides/3.7/admin-guide/installation.html#installation-on-linux)
 
 
