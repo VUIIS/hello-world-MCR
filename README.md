@@ -4,20 +4,20 @@ This document will take you through the steps of creating a singularity containe
 
 # File list
 
-	README.md				        This file.
+	README.md				This file.
 	Singularity			        Singularity container recipe
-	compile_matlab.sh		    Shell script to compile Matlab code
-	test_sing_container.sh	Shell script to test if Singularity is operational after build
+	compile_matlab.sh		    	Shell script to compile Matlab code
+	test_sing_container.sh			Shell script to test if Singularity is operational after build
 	bin/
 		hello_world		        Compiled matlab executable
-		run_hello_world.sh	  Matlab's generated runscript for the executable
+		run_hello_world.sh	 	Matlab's generated runscript for the executable
 		read_me.txt		        Information on Matlab generated files
-		<others>			        Other files created by Matlab	
+		<others>			Other files created by Matlab	
 
 	src/
-		hello_world.m		      Matlab main function
-		hello_world_run.m	    Subfunction required for hello_world.m
-		test_matlab.m		      Test code at Matlab command line
+		hello_world.m		      	Matlab main function
+		hello_world_run.m	   	Subfunction required for hello_world.m
+		test_matlab.m		     	 Test code at Matlab command line
 
 
 # The process
