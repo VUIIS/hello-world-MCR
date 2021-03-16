@@ -4,7 +4,6 @@ This document will take you through the steps of creating a singularity containe
 
 # File list
 
-	README.md				This file.
 	Singularity			        Singularity container recipe
 	compile_matlab.sh		    	Shell script to compile Matlab code
 	test_sing_container.sh			Shell script to test if Singularity is operational after build
