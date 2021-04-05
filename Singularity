@@ -31,6 +31,9 @@ From: ubuntu:20.04
 
  # Create input/output directories for binding
   mkdir /INPUTS && mkdir /OUTPUTS
+  
+ # Add permissions within container
+  chmod 777 -R /opt
 
 
 %runscript
